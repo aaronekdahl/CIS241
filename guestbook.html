@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="Keywords" content="CIW, Web Foundations Associate, Example"/>
+<meta name="Description" content="For the CIW Web Foundations Associate courses"/>
+<meta charset="utf-8"/>
+<!-- <link rel="stylesheet"  type="text/css" href="form.css"/> -->
+<title>Basic Form</title>
+</head>
+
+<body>
+
+<h1>Aaron Ekdahl Guest Book</h1>
+
+<form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+Enter Your Name: <input type="text" name="Name" size="40"/>
+<br>
+<br>
+Enter Your E-mail: <input type="text" name="Email" size="40"/>
+<br>
+<br>
+What country do you live in?
+<br>
+<textarea name="country" cols="30" rows="1"></textarea>
+<br>
+<br>
+What is your age group?
+<br>
+<input type="radio" name="AgeGroup" value="Under 18" checked="checked"/>Under 18<br>
+<input type="radio" name="AgeGroup" value="18-30"/>18-30<br>
+<input type="radio" name="AgeGroup" value="31-45"/>31-45<br>
+<input type="radio" name="AgeGroup" value="46-64"/>46-64<br>
+<input type="radio" name="AgeGroup" value="65 and over"/>65 and over
+<br>
+<br>
+Should we add you to our mailing list?
+<br>
+<input type="radio" name="AddToList" value="yes" checked="checked"/>Yes
+<input type="radio" name="AddToList" value="no"/>No
+<br>
+<br>
+What web technologies are you interested in? (choose all that apply):
+<br/>
+<select name="interests" multiple="multiple" size="6">
+<option>HTML</option>
+<option>CSS</option>
+<option>Javascript</option>
+<option>AJAX</option>
+<option>SQL</option>
+<option>PHP</option>
+</select>
+<br/>
+<br/>
+How did you find my website?
+<br/>
+<select name="website">
+<option>Select one</option>
+<option>I'm a friend</option>
+<option>A friend directed me to your site</option>
+<option>School web site</option>
+<option>A search engine directed me to your site</option>
+<option>I came across your site by accident</option>
+<option>Other</option>
+</select>
+<br>
+<br>
+Comments:
+<br/>
+<textarea name="comments" cols="30" rows="3"></textarea>
+<br/>
+<br/>
+<input type="submit">
+<input type="reset">
+</form>
+
+</body>
+</html>
